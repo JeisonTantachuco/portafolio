@@ -1,87 +1,187 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio | GIS Specialist</title>
+    <title>My Portfolio | GIS Specialist</title>
     <!-- Vinculamos el CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Fuente de Google Fonts (Opcional pero recomendado) -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Iconos (FontAwesome) -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <!-- BARRA DE NAVEGACIÓN -->
     <header class="header">
         <nav class="navbar">
-            <a href="#" class="logo">MiPortafolio.</a>
+            <a href="#" class="logo" data-i18n="logo">MyPortfolio.</a>
+
             <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li>
+                    <a href="#inicio" data-i18n="nav.home">Home</a>
+                </li>
+                <li>
+                    <a href="#sobre-mi" data-i18n="nav.about">About me</a>
+                </li>
+                <li>
+                    <a href="#proyectos" data-i18n="nav.projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contacto" data-i18n="nav.contact">Contact</a>
+                </li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <div class="language-switcher" aria-label="Select language">
+                <button
+                    type="button"
+                    class="language-btn active"
+                    data-lang="en"
+                    aria-pressed="true">
+                    EN
+                </button>
+
+                <span class="language-divider">|</span>
+
+                <button
+                    type="button"
+                    class="language-btn"
+                    data-lang="es"
+                    aria-pressed="false">
+                    ES
+                </button>
             </div>
+
+            <button
+                type="button"
+                class="hamburger"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
     <!-- SECCIÓN PROYECTOS -->
     <section id="proyectos" class="section bg-light">
-        <h2 class="section-title">Mis Proyectos</h2>
+        <h2 class="section-title" data-i18n="projects.title">
+            My Projects
+        </h2>
+
         <div class="projects-grid">
-            <!-- Proyecto 3 -->
+            <!-- Project 1 -->
             <div class="project-card">
                 <div class="card-content">
-                    <h3>Visualizador Geoespacial de Isocronas</h3>
-                    <p>Aplicación interactiva que calcula y visualiza áreas de alcance (isocronas) basadas en tiempo de desplazamiento, estimando la población total dentro del radio seleccionado. Integra APIs de mapeo para análisis demográfico en tiempo real.</p>
-                    <!-- Tecnologías usadas (Pequeño detalle que suma puntos) -->
+                    <h3 data-i18n="projects.isochrones.title">
+                        Geospatial Isochrone Viewer
+                    </h3>
+
+                    <p data-i18n="projects.isochrones.description">
+                        An interactive application that calculates and displays
+                        travel-time catchment areas (isochrones), estimating the
+                        total population within the selected area. It integrates
+                        mapping APIs for real-time demographic analysis.
+                    </p>
+
                     <div class="tech-stack">
-                        <span>Leaflet JS</span> | <span>OpenRouteService</span> | <span>PostgreSQL - PostGIS</span>
+                        <span>Leaflet JS</span> |
+                        <span>OpenRouteService</span> |
+                        <span>PostgreSQL – PostGIS</span>
                     </div>
-                    <a href="https://isocronapoblacion.vercel.app/" class="btn-small">Ver más</a>
-                </div>
-            </div>
-            <!-- Proyecto 1 -->
-            <div class="project-card">
-                <div class="card-content">
-                    <h3>Automatización de procesos GIS</h3>
-                    <p>Desarrollo de scripts para automatizar procesos repetitivos de análisis, imputación de variables espaciales y actualización de cartografía, reduciendo tiempos operativos.</p>
-                    <a href="#" class="btn-small">Ver más</a>
-                </div>
-            </div>
-            <!-- Proyecto 1 -->
-            <div class="project-card">
-                <div class="card-content">
-                    <h3>Análisis de accesibilidad territorial</h3>
-                    <p>Cálculo de tiempos de accesibilidad entre centros poblados y capitales distritales a escala nacional, apoyando análisis de cobertura de servicios y planificación territorial.</p>
-                    <a href="#" class="btn-small">Ver más</a>
-                </div>
-            </div>
-            <!-- Proyecto 2 -->
-            <div class="project-card">
-                <div class="card-content">
-                    <h3>Integración y análisis de datos geoespaciales</h3>
-                    <p>Integración de bases de datos censales y registros administrativos utilizando técnicas de similitud de cadenas, geocodificación y relaciones espaciales para análisis estadístico territorial.</p>
-                    <a href="#" class="btn-small">Ver más</a>
+
+                    <a
+                        href="https://isocronapoblacion.vercel.app/"
+                        class="btn-small"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-i18n="projects.viewMore">
+                        View project
+                    </a>
                 </div>
             </div>
 
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="card-content">
+                    <h3 data-i18n="projects.automation.title">
+                        GIS Process Automation
+                    </h3>
+
+                    <p data-i18n="projects.automation.description">
+                        Development of scripts to automate repetitive analysis,
+                        spatial-variable imputation, and cartographic updating
+                        processes, reducing operational processing time.
+                    </p>
+
+                    <a href="#" class="btn-small" data-i18n="projects.viewMore">
+                        View project
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="card-content">
+                    <h3 data-i18n="projects.accessibility.title">
+                        Territorial Accessibility Analysis
+                    </h3>
+
+                    <p data-i18n="projects.accessibility.description">
+                        Calculation of travel times between populated places and
+                        district capitals at the national level, supporting
+                        service-coverage analysis and territorial planning.
+                    </p>
+
+                    <a href="#" class="btn-small" data-i18n="projects.viewMore">
+                        View project
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="card-content">
+                    <h3 data-i18n="projects.integration.title">
+                        Geospatial Data Integration and Analysis
+                    </h3>
+
+                    <p data-i18n="projects.integration.description">
+                        Integration of census databases and administrative records
+                        using string-similarity techniques, geocoding, and spatial
+                        relationships for territorial statistical analysis.
+                    </p>
+
+                    <a href="#" class="btn-small" data-i18n="projects.viewMore">
+                        View project
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- SECCIÓN SOBRE MÍ -->
     <section id="sobre-mi" class="section">
-        <h2 class="section-title">Sobre mí</h2>
+        <h2 class="section-title" data-i18n="about.title">About Me</h2>
+
         <div class="about-container">
             <div class="about-text">
-                <p>Soy estudiante de maestría en Geoinformática en Eötvös Loránd University (Hungría), becario Stipendium Hungaricum. Ingeniero Agrícola con sólida experiencia en análisis espacial, automatización GIS y gestión de datos geoespaciales. Trabajo con ArcGIS, QGIS, Python y R para transformar datos espaciales en información útil para la toma de decisiones. Tengo experiencia con bases de datos geoespaciales (PostgreSQL/PostGIS, SQL Server) y un nivel de inglés B2 (IELTS).</p>
-                <p><strong>Stack principal:</strong> ArcGIS · QGIS · Python · PostGIS · Web GIS · Spatial Analysis</p>
+                <p data-i18n="about.description">
+                    I am an MSc student in Geoinformatics at Eötvös Loránd
+                    University in Hungary and a Stipendium Hungaricum scholarship
+                    holder. I am an Agricultural Engineer with solid experience in
+                    spatial analysis, GIS automation, and geospatial data
+                    management. I use ArcGIS, QGIS, Python, and R to transform
+                    spatial data into useful information for decision-making. I
+                    also have experience with geospatial databases, including
+                    PostgreSQL/PostGIS and SQL Server, and hold a B2 level of
+                    English demonstrated through IELTS.
+                </p>
+
+                <p>
+                    <strong data-i18n="about.stack">Main stack:</strong>
+                    ArcGIS · QGIS · Python · PostGIS · Web GIS · Spatial Analysis
+                </p>
             </div>
         </div>
     </section>
@@ -89,10 +189,20 @@
     <!-- SECCIÓN HERO (PRINCIPAL) -->
     <section id="inicio" class="hero">
         <div class="hero-content">
-            <h1>Hola, soy <span class="highlight">Jeison Tantachuco</span></h1>
-            <h3>Especialista GIS</h3>
-            <p>Transformo información espacial en decisiones relevantes.</p>
-            <a href="#proyectos" class="btn">Ver mis trabajos</a>
+            <h1>
+                <span data-i18n="hero.greeting">Hello, I am</span>
+                <span class="highlight">Jeison Tantachuco</span>
+            </h1>
+
+            <h3 data-i18n="hero.role">GIS Specialist</h3>
+
+            <p data-i18n="hero.description">
+                I transform spatial information into meaningful decisions.
+            </p>
+
+            <a href="#proyectos" class="btn" data-i18n="hero.button">
+                View my work
+            </a>
         </div>
     </section>
 
@@ -100,14 +210,29 @@
 
     <!-- FOOTER -->
     <footer id="contacto">
-        <p>&copy; 2026 Jeison Tantachuco. Todos los derechos reservados.</p>
+        <p>
+            &copy; 2026 Jeison Tantachuco.
+            <span data-i18n="footer.rights">All rights reserved.</span>
+        </p>
+
         <div class="socials">
-            <a href="https://www.linkedin.com/in/jeison-alberto-tantachuco-roman/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://github.com/JeisonTantachuco" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a
+                href="https://www.linkedin.com/in/jeison-alberto-tantachuco-roman/"
+                target="_blank"
+                rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+            <a
+                href="https://github.com/JeisonTantachuco"
+                target="_blank"
+                rel="noopener noreferrer">
+                GitHub
+            </a>
         </div>
     </footer>
 
     <!-- Vinculamos el JS -->
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
