@@ -21,10 +21,10 @@ export const translations = {
                         'An interactive application that calculates and displays travel-time catchment areas (isochrones), estimating the total population within the selected area. It integrates mapping APIs for real-time demographic analysis.'
                 },
 
-                automation: {
-                    title: 'GIS Process Automation',
+                tsunami: {
+                    title: 'Caribbean Tsunami Propagation Explorer',
                     description:
-                        'Development of scripts to automate repetitive analysis, spatial-variable imputation, and cartographic updating processes, reducing operational processing time.'
+                        'Interactive GIS and web-mapping project that reconstructs regional tsunami travel times for the 1918 Puerto Rico earthquake. The model uses GEBCO 2025 bathymetry, a custom Gnomonic projection, and a least-cost propagation model. The resulting arrival-time raster and 30-minute contours were transformed into a browser-based animation with timeline playback, coastline masking, and an interactive Leaflet map.'
                 },
 
                 accessibility: {
@@ -82,10 +82,10 @@ export const translations = {
                         'Aplicación interactiva que calcula y visualiza áreas de alcance basadas en tiempo de desplazamiento (isocronas), estimando la población total dentro del área seleccionada. Integra APIs de mapeo para análisis demográfico en tiempo real.'
                 },
 
-                automation: {
-                    title: 'Automatización de Procesos GIS',
+                tsunami: {
+                    title: 'Explorador de Propagación de Tsunamis del Caribe',
                     description:
-                        'Desarrollo de scripts para automatizar procesos repetitivos de análisis, imputación de variables espaciales y actualización de cartografía, reduciendo los tiempos operativos.'
+                        'Proyecto interactivo de GIS y cartografía web que reconstruye los tiempos regionales de propagación del tsunami causado por el terremoto de Puerto Rico de 1918. El modelo utiliza la batimetría GEBCO 2025, una proyección gnomónica personalizada y un modelo de propagación de costo mínimo. El ráster de tiempos de llegada y los contornos de 30 minutos resultantes se transformaron en una animación web con reproducción temporal, enmascaramiento de la línea costera y un mapa interactivo de Leaflet.'
                 },
 
                 accessibility: {

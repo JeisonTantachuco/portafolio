@@ -104,17 +104,38 @@
             <!-- Project 2 -->
             <div class="project-card">
                 <div class="card-content">
-                    <h3 data-i18n="projects.automation.title">
-                        GIS Process Automation
+                    <h3 data-i18n="projects.tsunami.title">
+                        Caribbean Tsunami Propagation Explorer
                     </h3>
 
-                    <p data-i18n="projects.automation.description">
-                        Development of scripts to automate repetitive analysis,
-                        spatial-variable imputation, and cartographic updating
-                        processes, reducing operational processing time.
+                    <p data-i18n="projects.tsunami.description">
+                        Interactive GIS and web-mapping project that reconstructs regional
+                        tsunami travel times for the 1918 Puerto Rico earthquake. The model
+                        uses GEBCO 2025 bathymetry, a custom Gnomonic projection, and a
+                        least-cost propagation model. The resulting arrival-time raster and
+                        30-minute contours were transformed into a browser-based animation
+                        with timeline playback, coastline masking, and an interactive
+                        Leaflet map.
                     </p>
 
-                    <a href="#" class="btn-small" data-i18n="projects.viewMore">
+                    <div class="tech-stack">
+                        <span>QGIS</span> |
+                        <span>GRASS GIS</span> |
+                        <span>GDAL</span> |
+                        <span>Python</span> |
+                        <span>Rasterio</span> |
+                        <span>GeoTIFF</span> |
+                        <span>Leaflet</span> |
+                        <span>JavaScript</span> |
+                        <span>GeoJSON</span>
+                    </div>
+
+                    <a 
+                        href="https://jeisontantachuco.github.io/caribbean-tsunami-propagation-explorer/" 
+                        class="btn-small"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-i18n="projects.viewMore">
                         View project
                     </a>
                 </div>
