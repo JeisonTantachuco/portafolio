@@ -144,17 +144,36 @@
             <!-- Project 3 -->
             <div class="project-card">
                 <div class="card-content">
-                    <h3 data-i18n="projects.accessibility.title">
-                        Territorial Accessibility Analysis
+                    <h3 data-i18n="projects.balaton.title">
+                        Lake Balaton Surface Temperature Monitor
                     </h3>
 
-                    <p data-i18n="projects.accessibility.description">
-                        Calculation of travel times between populated places and
-                        district capitals at the national level, supporting
-                        service-coverage analysis and territorial planning.
+                    <p data-i18n="projects.balaton.description">
+                        An interactive Google Earth Engine application that detects and
+                        monitors satellite-derived surface-water-temperature anomalies in
+                        Lake Balaton, Hungary. Each observation is compared against
+                        2003–2022 climatological baselines for the same basin, season,
+                        satellite, and day/night stream, reporting temperature, anomaly,
+                        percentile rank, and a thermal-status label. The app combines Terra
+                        and Aqua MODIS daily LST, 30 m Landsat 8/9 thermal hotspot maps, and
+                        ERA5-Land weather context, with daily and monthly summary views and
+                        downloadable data-quality metadata.
                     </p>
 
-                    <a href="#" class="btn-small" data-i18n="projects.viewMore">
+                    <div class="tech-stack">
+                        <span>Google Earth Engine</span> |
+                        <span>MODIS (MOD11A1 / MYD11A1)</span> |
+                        <span>Landsat 8/9</span> |
+                        <span>ERA5-Land</span> |
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a
+                        href="https://jtantaroman.users.earthengine.app/view/lake-balaton-lst-monitor"
+                        class="btn-small"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-i18n="projects.viewMore">
                         View project
                     </a>
                 </div>

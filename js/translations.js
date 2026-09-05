@@ -27,10 +27,10 @@ export const translations = {
                         'Interactive GIS and web-mapping project that reconstructs regional tsunami travel times for the 1918 Puerto Rico earthquake. The model uses GEBCO 2025 bathymetry, a custom Gnomonic projection, and a least-cost propagation model. The resulting arrival-time raster and 30-minute contours were transformed into a browser-based animation with timeline playback, coastline masking, and an interactive Leaflet map.'
                 },
 
-                accessibility: {
-                    title: 'Territorial Accessibility Analysis',
+                balaton: {
+                    title: 'Lake Balaton Surface Temperature Monitor',
                     description:
-                        'Calculation of travel times between populated places and district capitals at the national level, supporting service-coverage analysis and territorial planning.'
+                        'An interactive Google Earth Engine application that detects and monitors satellite-derived surface-water-temperature anomalies in Lake Balaton, Hungary. Each observation is compared against 2003–2022 climatological baselines for the same basin, season, satellite, and day/night stream, reporting temperature, anomaly, percentile rank, and a thermal-status label. The app combines Terra and Aqua MODIS daily LST, 30 m Landsat 8/9 thermal hotspot maps, and ERA5-Land weather context, with daily and monthly summary views and downloadable data-quality metadata.'
                 },
 
                 integration: {
@@ -88,10 +88,10 @@ export const translations = {
                         'Proyecto interactivo de GIS y cartografía web que reconstruye los tiempos regionales de propagación del tsunami causado por el terremoto de Puerto Rico de 1918. El modelo utiliza la batimetría GEBCO 2025, una proyección gnomónica personalizada y un modelo de propagación de costo mínimo. El ráster de tiempos de llegada y los contornos de 30 minutos resultantes se transformaron en una animación web con reproducción temporal, enmascaramiento de la línea costera y un mapa interactivo de Leaflet.'
                 },
 
-                accessibility: {
-                    title: 'Análisis de Accesibilidad Territorial',
+                balaton: {
+                    title: 'Monitor de Temperatura Superficial del Lago Balatón',
                     description:
-                        'Cálculo de tiempos de desplazamiento entre centros poblados y capitales distritales a escala nacional, apoyando el análisis de cobertura de servicios y la planificación territorial.'
+                        'Aplicación interactiva de Google Earth Engine que detecta y monitorea anomalías de temperatura superficial del agua derivadas de satélite en el lago Balatón, Hungría. Cada observación se compara con líneas base climatológicas de 2003–2022 para la misma cuenca, estación, satélite y flujo diurno/nocturno, reportando la temperatura, la anomalía, el rango percentil y una etiqueta de estado térmico. La aplicación combina el LST diario de MODIS Terra y Aqua, mapas de puntos calientes térmicos de Landsat 8/9 a 30 m y el contexto meteorológico de ERA5-Land, con vistas de resumen diario y mensual y metadatos descargables de calidad de datos.'
                 },
 
                 integration: {
