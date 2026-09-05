@@ -1,0 +1,6 @@
+# local originals / scratch
+assets/images/IMG_*.JPG
+assets/images/IMG_*.jpg
+*.psd
+.DS_Store
+Thumbs.db
