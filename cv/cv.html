@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeison Tantachuco — CV</title>
+<style>
+    :root {
+        --accent: #1f4e79;
+        --ink: #222;
+        --muted: #555;
+        --rule: #c9d3dc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        background: #e9edf1;
+        color: var(--ink);
+        font-family: "Calibri", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        font-size: 10.5pt;
+        line-height: 1.36;
+    }
+
+    /* screen-only helper bar */
+    .hint {
+        max-width: 210mm;
+        margin: 0 auto;
+        padding: 10px 16px;
+        font-size: 9.5pt;
+        color: #33475b;
+        background: #dceaf5;
+        border-bottom: 1px solid #b9d3e6;
+    }
+    .hint b { color: #1f4e79; }
+
+    .page {
+        max-width: 210mm;
+        margin: 14px auto 40px;
+        padding: 16mm 16mm 14mm;
+        background: #fff;
+        box-shadow: 0 2px 14px rgba(0, 0, 0, 0.14);
+    }
+
+    header { margin-bottom: 10px; }
+
+    h1 {
+        margin: 0;
+        font-size: 22pt;
+        letter-spacing: 0.5px;
+        color: var(--accent);
+    }
+
+    .role {
+        margin: 2px 0 6px;
+        font-size: 11.5pt;
+        font-weight: 600;
+        color: var(--ink);
+    }
+
+    .contact {
+        font-size: 9.5pt;
+        color: var(--muted);
+    }
+    .contact a { color: var(--muted); text-decoration: none; }
+    .contact span { white-space: nowrap; }
+
+    h2 {
+        font-size: 10.5pt;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        color: var(--accent);
+        border-bottom: 1.5px solid var(--rule);
+        padding-bottom: 2px;
+        margin: 14px 0 7px;
+    }
+
+    p { margin: 0 0 6px; }
+
+    ul { margin: 4px 0 8px; padding-left: 17px; }
+    li { margin-bottom: 3px; }
+
+    .skills li { margin-bottom: 4px; }
+    .skills strong { color: var(--ink); }
+
+    .job { margin-bottom: 9px; }
+    .job-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+    }
+    .job-title { font-weight: 700; }
+    .job-title .org { font-weight: 600; }
+    .job-meta {
+        white-space: nowrap;
+        color: var(--muted);
+        font-size: 9.5pt;
+    }
+    .job-loc { color: var(--muted); font-size: 9.5pt; margin: 0 0 3px; }
+
+    .proj { margin-bottom: 6px; }
+    .proj b { color: var(--ink); }
+    .proj .link { color: var(--accent); font-size: 9pt; }
+
+    .edu-item { margin-bottom: 6px; }
+    .edu-item .sub { color: var(--muted); font-size: 9.5pt; }
+
+    a { color: var(--accent); }
+
+    @media print {
+        html, body { background: #fff; font-size: 10pt; }
+        .hint { display: none; }
+        .page {
+            max-width: none;
+            margin: 0;
+            padding: 0;
+            box-shadow: none;
+        }
+        h2 { break-after: avoid; }
+        .job, .proj, .edu-item { break-inside: avoid; }
+    }
+
+    @page { size: A4; margin: 14mm 15mm; }
+</style>
+</head>
+<body>
+
+<div class="hint">
+    <b>To save as PDF:</b> open this file in Chrome or Edge → Print (Ctrl/Cmd&nbsp;+&nbsp;P) →
+    Destination <b>Save as PDF</b> → Margins <b>Default</b>, enable <b>Background graphics</b> → Save as
+    <code>cv_jeisontantachucoroman.pdf</code>. This bar does not appear in the PDF.
+</div>
+
+<div class="page">
+
+    <header>
+        <h1>Jeison Tantachuco</h1>
+        <div class="role">GIS Specialist &amp; Geospatial Developer</div>
+        <div class="contact">
+            <span>Budapest, Hungary</span> &nbsp;·&nbsp;
+            <span><a href="mailto:jtantaroman@gmail.com">jtantaroman@gmail.com</a></span> &nbsp;·&nbsp;
+            <span>linkedin.com/in/jeison-alberto-tantachuco-roman</span> &nbsp;·&nbsp;
+            <span>github.com/JeisonTantachuco</span> &nbsp;·&nbsp;
+            <span>jeisontantachuco.github.io/portafolio</span>
+        </div>
+    </header>
+
+    <h2>Profile</h2>
+    <p>
+        GIS Specialist and Geospatial Developer with 5+ years of experience turning spatial data into
+        Web GIS applications, Earth-observation tools, and decision-support models. Agricultural Engineer,
+        now completing an MSc in Geoinformatics at Eötvös Loránd University as a Stipendium Hungaricum
+        scholar. Comfortable across the whole workflow — spatial analysis and modelling, automation in
+        Python/R and PostGIS, Google Earth Engine, and browser-based mapping with Leaflet/OpenLayers.
+        Experienced with national-scale statistical data and multicultural teams across Latin America and
+        Europe. Open to remote work.
+    </p>
+
+    <h2>Core Skills</h2>
+    <ul class="skills">
+        <li><strong>GIS &amp; Spatial Analysis:</strong> ArcGIS, QGIS, PyQGIS, GeoDa, CloudCompare; spatial statistics (Moran's I, LISA), gravity &amp; accessibility modelling</li>
+        <li><strong>Programming &amp; Data:</strong> Python (GeoPandas, Rasterio, NumPy, GDAL/OGR), R, SQL</li>
+        <li><strong>Remote Sensing &amp; Earth Observation:</strong> Google Earth Engine, Landsat 8/9, MODIS, Sentinel, GRASS GIS, LiDAR point-cloud processing</li>
+        <li><strong>Databases &amp; Servers:</strong> PostgreSQL/PostGIS, SQL Server, GeoServer, OGC standards (WMS, WFS, tiles)</li>
+        <li><strong>Web Mapping &amp; Development:</strong> HTML, CSS, JavaScript, Leaflet, OpenLayers, Git/GitHub</li>
+        <li><strong>Documentation &amp; Delivery:</strong> technical documentation, reproducible workflows, bilingual delivery (EN/ES)</li>
+    </ul>
+
+    <h2>Selected Projects</h2>
+    <div class="proj">
+        <b>Lake Balaton Surface Temperature Monitor</b> — Google Earth Engine web app that detects
+        satellite-derived lake-surface-temperature anomalies against a 2003–2022 climatology, combining
+        Terra/Aqua MODIS, Landsat 8/9 and ERA5-Land.
+        <span class="link">jtantaroman.users.earthengine.app/view/lake-balaton-lst-monitor</span>
+    </div>
+    <div class="proj">
+        <b>Caribbean Tsunami Propagation Explorer</b> — reconstruction of regional tsunami travel times for
+        the 1918 Puerto Rico earthquake using GEBCO 2025 bathymetry, a custom gnomonic projection and a
+        least-cost propagation model, delivered as a browser animation with timeline playback.
+        Python, QGIS, GRASS GIS, GDAL, Rasterio, Leaflet.
+        <span class="link">jeisontantachuco.github.io/caribbean-tsunami-propagation-explorer</span>
+    </div>
+    <div class="proj">
+        <b>Geospatial Isochrone Viewer</b> — interactive app that computes travel-time catchment areas and
+        the population within them, integrating a routing API with a PostGIS backend.
+        Leaflet, OpenRouteService, PostgreSQL/PostGIS.
+        <span class="link">isocronapoblacion.vercel.app</span>
+    </div>
+
+    <h2>Professional Experience</h2>
+
+    <div class="job">
+        <div class="job-head">
+            <div class="job-title">GIS AI Trainer <span class="org">— micro1 (Consultant)</span></div>
+            <div class="job-meta">Mar 2026 – Aug 2026</div>
+        </div>
+        <div class="job-loc">Remote</div>
+        <ul>
+            <li>Designed 30–40 QGIS geospatial tasks end to end — problem statements, input data, deliverables and grading rubrics — across raster, vector, remote sensing, hydrology and cartographic mapping.</li>
+            <li>Reviewed and validated 40–50 QGIS workflows submitted by GIS specialists from a global pool of ~200 contributors.</li>
+            <li>Documented spatial-analysis reasoning, troubleshooting and quality-control checks to support AI training on professional GIS workflows.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-head">
+            <div class="job-title">GIS Intern <span class="org">— AUMOVIO</span></div>
+            <div class="job-meta">Nov 2025 – Jun 2026</div>
+        </div>
+        <div class="job-loc">Budapest, Hungary</div>
+        <ul>
+            <li>Mapped, segmented and classified LiDAR-derived point clouds within a ~3-block radius of parking facilities: 2D features (parking slots, lane markings, poles, walls, stop lines) and 3D objects (pedestrians, cars, two-wheelers — stationary and moving), using CloudCompare and QGIS.</li>
+            <li>Built a QGIS/Python script that generates standardized GeoJSON outputs for the 2D mapping workflow and shared it with the team (with team-lead approval) to remove repetitive setup.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-head">
+            <div class="job-title">GIS Analyst <span class="org">— Intercorp Retail</span></div>
+            <div class="job-meta">Jun 2023 – Aug 2025</div>
+        </div>
+        <div class="job-loc">Lima, Peru</div>
+        <ul>
+            <li>Built and deployed 2 interactive Web GIS applications/dashboards used by cross-department stakeholders for site selection and spatial decision-making.</li>
+            <li>Developed backend geospatial workflows in PostgreSQL/PostGIS over national datasets of ~300k–400k records (demographic, socioeconomic and spatial).</li>
+            <li>Evaluated 20–30 candidate store locations per week using gravity-model and comparative analysis for predictive site selection.</li>
+            <li>Replaced a manual ~2-minute Excel process with an event-driven PostGIS trigger that recomputes the population and income contained in any service polygon drawn or edited in QGIS — results in seconds, kept in sync automatically on every edit.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-head">
+            <div class="job-title">Cartographic Analyst <span class="org">— National Institute of Statistics (INEI)</span></div>
+            <div class="job-meta">Oct 2020 – May 2023</div>
+        </div>
+        <div class="job-loc">Lima, Peru</div>
+        <ul>
+            <li>Processed climate and demographic indicators (precipitation, temperature, UV) for ~94,000 populated centers nationwide using Google Earth Engine.</li>
+            <li>Ran nationwide accessibility analyses across 1,800+ districts, plus geocoding and urban socioeconomic stratification with Python and GIS.</li>
+            <li>Designed integration procedures for census and administrative databases (~1 million records) using SQL, spatial joins and string-matching algorithms.</li>
+            <li>Coordinated with project leads on national operations including the Economic Census (CENEC) and the Venezuelan Population Survey (ENPOVE).</li>
+            <li>Applied spatial statistics (Moran's I, LISA) to survey and urban-polygon data and automated processing with reproducible scripts.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-head">
+            <div class="job-title">Technical Assistant <span class="org">— SUYO S.A.C.</span></div>
+            <div class="job-meta">2019</div>
+        </div>
+        <div class="job-loc">Lima, Peru</div>
+        <ul>
+            <li>Reviewed Territorial Conditioning and Urban Development Plans and helped structure geospatial databases for regional planning.</li>
+        </ul>
+    </div>
+
+    <h2>Education</h2>
+    <div class="edu-item">
+        <b>MSc in Geoinformatics</b> — Eötvös Loránd University, Budapest, Hungary &nbsp;|&nbsp; Sep 2025 – Jun 2027<br>
+        <span class="sub">Stipendium Hungaricum Scholar · Faculty of Informatics</span>
+    </div>
+    <div class="edu-item">
+        <b>Diploma of Expertise in Web Map Application Programming (18 ECTS)</b> — University of Girona Foundation: Innovation and Training, Spain &nbsp;|&nbsp; Feb 2025 – Jun 2025
+    </div>
+    <div class="edu-item">
+        <b>BSc &amp; Professional Degree, Agricultural Engineering</b> — Universidad Nacional Agraria La Molina, Lima, Peru &nbsp;|&nbsp; 2014 – 2019
+    </div>
+
+    <h2>Languages</h2>
+    <ul>
+        <li><strong>Spanish</strong> — Native</li>
+        <li><strong>English</strong> — B2 (IELTS 6.5, 2024)</li>
+    </ul>
+
+</div>
+
+</body>
+</html>
