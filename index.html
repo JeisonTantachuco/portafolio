@@ -3,18 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | GIS Specialist</title>
+
+    <title>Jeison Tantachuco — GIS Specialist &amp; Geospatial Developer</title>
+    <meta name="description" content="Jeison Tantachuco — GIS Specialist and Geospatial Developer. MSc Geoinformatics student building Web GIS applications, Google Earth Engine tools, and spatial models. Based in Budapest, available worldwide (remote).">
+    <meta name="author" content="Jeison Tantachuco">
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jeison Tantachuco — GIS Specialist &amp; Geospatial Developer">
+    <meta property="og:description" content="Web GIS applications, Google Earth Engine tools, and spatial models. Based in Budapest, available worldwide (remote).">
+    <meta property="og:url" content="https://jeisontantachuco.github.io/portafolio/">
+    <meta property="og:image" content="https://jeisontantachuco.github.io/portafolio/assets/images/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
     <!-- Vinculamos el CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Fuente de Google Fonts (Opcional pero recomendado) -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Fuente de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- BARRA DE NAVEGACIÓN -->
     <header class="header">
         <nav class="navbar">
-            <a href="#" class="logo" data-i18n="logo">MyPortfolio.</a>
+            <a href="#inicio" class="logo" data-i18n="logo">Jeison Tantachuco</a>
 
             <ul class="nav-links">
                 <li>
@@ -22,6 +36,9 @@
                 </li>
                 <li>
                     <a href="#sobre-mi" data-i18n="nav.about">About me</a>
+                </li>
+                <li>
+                    <a href="#skills" data-i18n="nav.skills">Skills</a>
                 </li>
                 <li>
                     <a href="#proyectos" data-i18n="nav.projects">Projects</a>
@@ -63,8 +80,155 @@
         </nav>
     </header>
 
+    <!-- SECCIÓN HERO (PRINCIPAL) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>
+                <span data-i18n="hero.greeting">Hello, I am</span>
+                <span class="highlight">Jeison Tantachuco</span>
+            </h1>
+
+            <h3 data-i18n="hero.role">GIS Specialist &amp; Geospatial Developer</h3>
+
+            <p data-i18n="hero.description">
+                I turn spatial data into Web GIS applications, Earth-observation
+                tools, and models that support real decisions.
+            </p>
+
+            <p class="hero-meta">
+                <span data-i18n="hero.location">Budapest, Hungary</span>
+                <span class="dot">·</span>
+                <span data-i18n="hero.availability">Open to worldwide remote roles &amp; contracts</span>
+            </p>
+
+            <div class="hero-actions">
+                <a href="#proyectos" class="btn" data-i18n="hero.button">
+                    View my work
+                </a>
+                <a
+                    href="cv_jeisontantachucoroman.pdf"
+                    class="btn btn-outline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    download
+                    data-i18n="hero.cv">
+                    Download CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section id="sobre-mi" class="section">
+        <h2 class="section-title" data-i18n="about.title">About Me</h2>
+
+        <div class="about-container">
+            <div class="about-photo">
+                <img
+                    src="assets/images/headshot.jpg"
+                    alt="Jeison Tantachuco"
+                    style="display:none"
+                    onload="this.style.display='block';this.nextElementSibling.style.display='none';">
+                <div class="about-photo-fallback" aria-hidden="true">JT</div>
+            </div>
+
+            <div class="about-text">
+                <p data-i18n="about.description">
+                    I am an MSc student in Geoinformatics at Eötvös Loránd
+                    University in Hungary and a Stipendium Hungaricum scholarship
+                    holder. I am an Agricultural Engineer with 5+ years of
+                    professional experience in spatial analysis, GIS automation,
+                    and geospatial data management. I use ArcGIS, QGIS, Python, and
+                    R to transform spatial data into useful information for
+                    decision-making. I also have experience with geospatial
+                    databases, including PostgreSQL/PostGIS and SQL Server, and
+                    hold a B2 level of English demonstrated through IELTS.
+                </p>
+
+                <p>
+                    <strong data-i18n="about.stack">Main stack:</strong>
+                    ArcGIS · QGIS · Python · PostGIS · Google Earth Engine · Web GIS
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SKILLS -->
+    <section id="skills" class="section bg-light">
+        <h2 class="section-title" data-i18n="skills.title">Skills &amp; Tools</h2>
+
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3 data-i18n="skills.gis.title">GIS &amp; Spatial Analysis</h3>
+                <div class="skill-tags">
+                    <span>ArcGIS</span>
+                    <span>QGIS</span>
+                    <span>PyQGIS</span>
+                    <span>GeoDa</span>
+                    <span>CloudCompare</span>
+                    <span>Spatial statistics</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 data-i18n="skills.programming.title">Programming &amp; Data Science</h3>
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>R</span>
+                    <span>GeoPandas</span>
+                    <span>Rasterio</span>
+                    <span>NumPy</span>
+                    <span>GDAL / OGR</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 data-i18n="skills.rs.title">Remote Sensing &amp; Earth Observation</h3>
+                <div class="skill-tags">
+                    <span>Google Earth Engine</span>
+                    <span>Landsat 8/9</span>
+                    <span>MODIS</span>
+                    <span>Sentinel</span>
+                    <span>GRASS GIS</span>
+                    <span>LiDAR point clouds</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 data-i18n="skills.databases.title">Databases &amp; Geospatial Servers</h3>
+                <div class="skill-tags">
+                    <span>PostgreSQL / PostGIS</span>
+                    <span>SQL Server</span>
+                    <span>GeoServer</span>
+                    <span>OGC (WMS / WFS / Tiles)</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 data-i18n="skills.web.title">Web Mapping &amp; Development</h3>
+                <div class="skill-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Leaflet</span>
+                    <span>OpenLayers</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 data-i18n="skills.tools.title">Tools &amp; Workflow</h3>
+                <div class="skill-tags">
+                    <span>Git / GitHub</span>
+                    <span>Automation &amp; scripting</span>
+                    <span>Technical documentation</span>
+                    <span>Bilingual (EN / ES)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- SECCIÓN PROYECTOS -->
-    <section id="proyectos" class="section bg-light">
+    <section id="proyectos" class="section">
         <h2 class="section-title" data-i18n="projects.title">
             My Projects
         </h2>
@@ -90,14 +254,16 @@
                         <span>PostgreSQL – PostGIS</span>
                     </div>
 
-                    <a
-                        href="https://isocronapoblacion.vercel.app/"
-                        class="btn-small"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        data-i18n="projects.viewMore">
-                        View project
-                    </a>
+                    <div class="project-links">
+                        <a
+                            href="https://isocronapoblacion.vercel.app/"
+                            class="btn-small"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-i18n="projects.viewApp">
+                            View app
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -130,14 +296,24 @@
                         <span>GeoJSON</span>
                     </div>
 
-                    <a 
-                        href="https://jeisontantachuco.github.io/caribbean-tsunami-propagation-explorer/" 
-                        class="btn-small"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        data-i18n="projects.viewMore">
-                        View project
-                    </a>
+                    <div class="project-links">
+                        <a
+                            href="https://jeisontantachuco.github.io/caribbean-tsunami-propagation-explorer/"
+                            class="btn-small"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-i18n="projects.viewApp">
+                            View app
+                        </a>
+                        <a
+                            href="https://github.com/JeisonTantachuco/caribbean-tsunami-propagation-explorer"
+                            class="btn-small btn-code"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-i18n="projects.viewCode">
+                            View code
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -168,88 +344,69 @@
                         <span>JavaScript</span>
                     </div>
 
-                    <a
-                        href="https://jtantaroman.users.earthengine.app/view/lake-balaton-lst-monitor"
-                        class="btn-small"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        data-i18n="projects.viewMore">
-                        View project
-                    </a>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card">
-                <div class="card-content">
-                    <h3 data-i18n="projects.integration.title">
-                        Geospatial Data Integration and Analysis
-                    </h3>
-
-                    <p data-i18n="projects.integration.description">
-                        Integration of census databases and administrative records
-                        using string-similarity techniques, geocoding, and spatial
-                        relationships for territorial statistical analysis.
-                    </p>
-
-                    <a href="#" class="btn-small" data-i18n="projects.viewMore">
-                        View project
-                    </a>
+                    <div class="project-links">
+                        <a
+                            href="https://jtantaroman.users.earthengine.app/view/lake-balaton-lst-monitor"
+                            class="btn-small"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-i18n="projects.viewApp">
+                            View app
+                        </a>
+                        <a
+                            href="https://github.com/JeisonTantachuco/lake-balaton-lst-monitor"
+                            class="btn-small btn-code"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-i18n="projects.viewCode">
+                            View code
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN SOBRE MÍ -->
-    <section id="sobre-mi" class="section">
-        <h2 class="section-title" data-i18n="about.title">About Me</h2>
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="section contact bg-light">
+        <h2 class="section-title" data-i18n="contact.title">Get in touch</h2>
 
-        <div class="about-container">
-            <div class="about-text">
-                <p data-i18n="about.description">
-                    I am an MSc student in Geoinformatics at Eötvös Loránd
-                    University in Hungary and a Stipendium Hungaricum scholarship
-                    holder. I am an Agricultural Engineer with solid experience in
-                    spatial analysis, GIS automation, and geospatial data
-                    management. I use ArcGIS, QGIS, Python, and R to transform
-                    spatial data into useful information for decision-making. I
-                    also have experience with geospatial databases, including
-                    PostgreSQL/PostGIS and SQL Server, and hold a B2 level of
-                    English demonstrated through IELTS.
-                </p>
+        <p class="contact-description" data-i18n="contact.description">
+            Interested in working together, or have a question about a project?
+            Reach out through any of these channels.
+        </p>
 
-                <p>
-                    <strong data-i18n="about.stack">Main stack:</strong>
-                    ArcGIS · QGIS · Python · PostGIS · Web GIS · Spatial Analysis
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCIÓN HERO (PRINCIPAL) -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>
-                <span data-i18n="hero.greeting">Hello, I am</span>
-                <span class="highlight">Jeison Tantachuco</span>
-            </h1>
-
-            <h3 data-i18n="hero.role">GIS Specialist</h3>
-
-            <p data-i18n="hero.description">
-                I transform spatial information into meaningful decisions.
-            </p>
-
-            <a href="#proyectos" class="btn" data-i18n="hero.button">
-                View my work
+        <div class="contact-methods">
+            <a href="mailto:jtantaroman@gmail.com">jtantaroman@gmail.com</a>
+            <a
+                href="https://www.linkedin.com/in/jeison-alberto-tantachuco-roman/"
+                target="_blank"
+                rel="noopener noreferrer">
+                LinkedIn
+            </a>
+            <a
+                href="https://github.com/JeisonTantachuco"
+                target="_blank"
+                rel="noopener noreferrer">
+                GitHub
+            </a>
+            <a
+                href="cv_jeisontantachucoroman.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                data-i18n="contact.cv">
+                Download CV
             </a>
         </div>
+
+        <p class="contact-location" data-i18n="contact.location">
+            Based in Budapest, Hungary — available worldwide, remote.
+        </p>
     </section>
 
-
-
     <!-- FOOTER -->
-    <footer id="contacto">
+    <footer class="footer">
         <p>
             &copy; 2026 Jeison Tantachuco.
             <span data-i18n="footer.rights">All rights reserved.</span>

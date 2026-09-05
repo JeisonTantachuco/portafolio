@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Poppins, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#141419"/>
+  <g fill="none" stroke="#3498db" stroke-width="1.5">
+    <path d="M-60 120 Q 200 60 460 150 T 1000 120 T 1320 170" stroke-opacity="0.10"/>
+    <path d="M-60 230 Q 220 300 480 220 T 1020 260 T 1320 210" stroke-opacity="0.08"/>
+    <path d="M-60 400 Q 240 330 500 420 T 1040 380 T 1320 430" stroke-opacity="0.10"/>
+    <path d="M-60 520 Q 220 580 480 500 T 1020 540 T 1320 500" stroke-opacity="0.07"/>
+  </g>
+  <rect x="90" y="250" width="56" height="6" fill="#3498db"/>
+  <text x="90" y="330" fill="#ffffff" font-size="72" font-weight="700">Jeison Tantachuco</text>
+  <text x="90" y="392" fill="#d8d8d8" font-size="34" font-weight="400">GIS Specialist &amp; Geospatial Developer</text>
+  <text x="90" y="452" fill="#8fb9d6" font-size="24" font-weight="400">Web GIS · Google Earth Engine · Spatial modelling</text>
+  <text x="90" y="560" fill="#7d7d85" font-size="22" font-weight="400">jeisontantachuco.github.io/portafolio</text>
+</svg>
