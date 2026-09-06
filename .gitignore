@@ -4,3 +4,7 @@ assets/images/IMG_*.jpg
 *.psd
 .DS_Store
 Thumbs.db
+
+# personal CV versions with phone number — never publish
+cv/*_with_phone.pdf
+cv/cv-with-phone.html
