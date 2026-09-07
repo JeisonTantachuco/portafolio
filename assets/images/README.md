@@ -6,8 +6,21 @@ Drop the following files here. Filenames must match exactly — the site referen
 |------|---------------|----------|--------|
 | `headshot.jpg` | ~600×600 px, square, JPG | About section photo. Until it exists, a "JT" monogram is shown automatically. | **you add this** |
 | `og-image.png` | 1200×630 px, PNG | Link preview when the site is shared (LinkedIn, WhatsApp, Slack…). | convert from `og-image.svg` (below) |
+| `projects/isochrone-viewer.jpg` | 1200×675 px (16:9), JPG, < ~200 KB | Thumbnail on the Isochrone Viewer project card. Card hides the image slot automatically until the file exists. | **you add this** |
+| `projects/tsunami-explorer.jpg` | 1200×675 px (16:9), JPG, < ~200 KB | Thumbnail on the Tsunami Explorer project card. | **you add this** |
+| `projects/balaton-lst-monitor.jpg` | 1200×675 px (16:9), JPG, < ~200 KB | Thumbnail on the Balaton LST Monitor project card. | **you add this** |
 | `hero-bg.svg` | — | Hero background texture. | included |
 | `og-image.svg` | — | Source for `og-image.png`. | included |
+
+## Project thumbnails (`projects/`)
+
+Open each live app, frame a clean map view, and screenshot it:
+
+- **isochrone-viewer.jpg** — an isochrone polygon over the basemap with the population result visible.
+- **tsunami-explorer.jpg** — the arrival-time contours / animation frame over the Caribbean.
+- **balaton-lst-monitor.jpg** — the Lake Balaton anomaly map with the legend.
+
+Crop to 16:9 (1200×675), export JPG at ~80% quality (aim for under 200 KB each so the page stays fast). Filenames must match exactly.
 
 ## Making `og-image.png`
 
