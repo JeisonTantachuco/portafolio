@@ -470,16 +470,19 @@
                             <dt data-i18n="projects.labels.problem">Problem</dt>
                             <dd data-i18n="projects.balaton.problem">
                                 Is a given day's lake-surface temperature unusual for
-                                this basin and season, or is it normal?
+                                the time of year, or is it normal?
                             </dd>
                         </div>
                         <div>
                             <dt data-i18n="projects.labels.approach">Approach</dt>
                             <dd data-i18n="projects.balaton.approach">
-                                A Google Earth Engine app that compares each observation
-                                against a 2003–2022 climatology for the same basin,
-                                season, satellite and day/night stream, combining
-                                Terra/Aqua MODIS LST, Landsat 8/9 thermal and ERA5-Land.
+                                A Google Earth Engine app (supervised internship, ELTE)
+                                that flags each observation as unusually warm or cool
+                                against a fixed 2003–2022 climatology built per
+                                day-of-year window, satellite and day/night stream, from
+                                20 years of MODIS Terra/Aqua LST kept as four separate
+                                passes. Landsat 8/9 thermal detail and ERA5-Land weather
+                                context are being added.
                             </dd>
                         </div>
                         <div>
@@ -493,8 +496,9 @@
                         <div>
                             <dt data-i18n="projects.labels.limits">Limitations</dt>
                             <dd data-i18n="projects.balaton.limits">
-                                MODIS LST is cloud-limited and coarse (1 km); Landsat
-                                adds detail but only every 8–16 days.
+                                MODIS LST is cloud-limited and coarse (1 km), and night
+                                passes often see only part of the lake; Landsat will add
+                                detail but only every 8–16 days.
                             </dd>
                         </div>
                     </dl>

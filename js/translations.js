@@ -85,13 +85,13 @@ export const translations = {
                 balaton: {
                     title: 'Lake Balaton Surface Temperature Monitor',
                     problem:
-                        "Is a given day's lake-surface temperature unusual for this basin and season, or is it normal?",
+                        "Is a given day's lake-surface temperature unusual for the time of year, or is it normal?",
                     approach:
-                        'A Google Earth Engine app that compares each observation against a 2003–2022 climatology for the same basin, season, satellite and day/night stream, combining Terra/Aqua MODIS LST, Landsat 8/9 thermal and ERA5-Land.',
+                        'A Google Earth Engine app (supervised internship, ELTE) that flags each observation as unusually warm or cool against a fixed 2003–2022 climatology built per day-of-year window, satellite and day/night stream, from 20 years of MODIS Terra/Aqua LST kept as four separate passes. Landsat 8/9 thermal detail and ERA5-Land weather context are being added.',
                     result:
                         'Reports temperature, anomaly, percentile rank and a thermal-status label, with daily and monthly summaries and downloadable data-quality metadata.',
                     limits:
-                        'MODIS LST is cloud-limited and coarse (1 km); Landsat adds detail but only every 8–16 days.'
+                        'MODIS LST is cloud-limited and coarse (1 km), and night passes often see only part of the lake; Landsat will add detail but only every 8–16 days.'
                 }
             },
 
@@ -194,13 +194,13 @@ export const translations = {
                 balaton: {
                     title: 'Monitor de Temperatura Superficial del Lago Balatón',
                     problem:
-                        '¿La temperatura superficial del lago de un día dado es inusual para esta cuenca y estación, o es normal?',
+                        '¿La temperatura superficial del lago de un día dado es inusual para la época del año, o es normal?',
                     approach:
-                        'Una aplicación de Google Earth Engine que compara cada observación con una climatología 2003–2022 para la misma cuenca, estación, satélite y flujo diurno/nocturno, combinando LST de MODIS Terra/Aqua, térmico de Landsat 8/9 y ERA5-Land.',
+                        'Una aplicación de Google Earth Engine (prácticas supervisadas, ELTE) que marca cada observación como inusualmente cálida o fría frente a una climatología fija 2003–2022 construida por ventana de día del año, satélite y flujo diurno/nocturno, a partir de 20 años de LST de MODIS Terra/Aqua mantenidos como cuatro pasadas separadas. Se están añadiendo el detalle térmico de Landsat 8/9 y el contexto meteorológico de ERA5-Land.',
                     result:
                         'Reporta temperatura, anomalía, rango percentil y una etiqueta de estado térmico, con resúmenes diarios y mensuales y metadatos descargables de calidad de datos.',
                     limits:
-                        'El LST de MODIS está limitado por nubes y es grueso (1 km); Landsat aporta detalle pero solo cada 8–16 días.'
+                        'El LST de MODIS está limitado por nubes y es grueso (1 km), y las pasadas nocturnas a menudo ven solo parte del lago; Landsat aportará detalle pero solo cada 8–16 días.'
                 }
             },
 
