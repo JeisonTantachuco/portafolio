@@ -87,11 +87,11 @@ export const translations = {
                     problem:
                         "Is a given day's lake-surface temperature unusual for the time of year, or is it normal?",
                     approach:
-                        'A Google Earth Engine app (supervised internship, ELTE) that flags each observation as unusually warm or cool against a fixed 2003–2022 climatology built per day-of-year window, satellite and day/night stream, from 20 years of MODIS Terra/Aqua LST kept as four separate passes. Landsat 8/9 thermal detail and ERA5-Land weather context are being added.',
+                        'A Google Earth Engine app (supervised internship, ELTE) that flags each observation as unusually warm or cool against a fixed 2003–2022 climatology built per day-of-year window, satellite and day/night stream, from 20 years of MODIS Terra/Aqua LST kept as four separate passes, plus an ERA5-Land weather-context panel. Independently validated against Landsat thermal imagery and the Copernicus climate record.',
                     result:
                         'Reports temperature, anomaly, percentile rank and a thermal-status label, with daily and monthly summaries and downloadable data-quality metadata.',
                     limits:
-                        'MODIS LST is cloud-limited and coarse (1 km), and night passes often see only part of the lake; Landsat will add detail but only every 8–16 days.'
+                        'MODIS LST is cloud-limited and coarse (1 km), and night passes often see only part of the lake; validated for relative anomalies against Landsat and Copernicus, not for absolute calibration.'
                 }
             },
 
@@ -196,11 +196,11 @@ export const translations = {
                     problem:
                         '¿La temperatura superficial del lago de un día dado es inusual para la época del año, o es normal?',
                     approach:
-                        'Una aplicación de Google Earth Engine (prácticas supervisadas, ELTE) que marca cada observación como inusualmente cálida o fría frente a una climatología fija 2003–2022 construida por ventana de día del año, satélite y flujo diurno/nocturno, a partir de 20 años de LST de MODIS Terra/Aqua mantenidos como cuatro pasadas separadas. Se están añadiendo el detalle térmico de Landsat 8/9 y el contexto meteorológico de ERA5-Land.',
+                        'Una aplicación de Google Earth Engine (prácticas supervisadas, ELTE) que marca cada observación como inusualmente cálida o fría frente a una climatología fija 2003–2022 construida por ventana de día del año, satélite y flujo diurno/nocturno, a partir de 20 años de LST de MODIS Terra/Aqua mantenidos como cuatro pasadas separadas, más un panel de contexto meteorológico ERA5-Land. Validada de forma independiente frente a imágenes térmicas de Landsat y el registro climático de Copernicus.',
                     result:
                         'Reporta temperatura, anomalía, rango percentil y una etiqueta de estado térmico, con resúmenes diarios y mensuales y metadatos descargables de calidad de datos.',
                     limits:
-                        'El LST de MODIS está limitado por nubes y es grueso (1 km), y las pasadas nocturnas a menudo ven solo parte del lago; Landsat aportará detalle pero solo cada 8–16 días.'
+                        'El LST de MODIS está limitado por nubes y es grueso (1 km), y las pasadas nocturnas a menudo ven solo parte del lago; validado para anomalías relativas frente a Landsat y Copernicus, no para calibración absoluta.'
                 }
             },
 
