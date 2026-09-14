@@ -18,7 +18,6 @@ export const translations = {
                 description:
                     'I turn spatial data into Web GIS applications, Earth-observation tools, and models that support real decisions.',
                 location: 'Budapest, Hungary',
-                availability: 'Open to remote work',
                 button: 'View my work',
                 cv: 'Download CV'
             },
@@ -99,7 +98,7 @@ export const translations = {
                 title: 'Get in touch',
                 description:
                     'Interested in working together, or have a question about a project? Reach out through any of these channels.',
-                location: 'Based in Budapest, Hungary · open to remote work.',
+                location: 'Based in Budapest, Hungary.',
                 cv: 'Download CV'
             },
 
@@ -127,7 +126,6 @@ export const translations = {
                 description:
                     'Convierto datos espaciales en aplicaciones Web GIS, herramientas de observación de la Tierra y modelos que respaldan decisiones reales.',
                 location: 'Budapest, Hungría',
-                availability: 'Disponible para trabajo remoto',
                 button: 'Ver mis trabajos',
                 cv: 'Descargar CV'
             },
@@ -208,7 +206,7 @@ export const translations = {
                 title: 'Contacto',
                 description:
                     '¿Te interesa trabajar juntos o tienes una pregunta sobre algún proyecto? Escríbeme por cualquiera de estos canales.',
-                location: 'Con base en Budapest, Hungría · disponible para trabajo remoto.',
+                location: 'Con base en Budapest, Hungría.',
                 cv: 'Descargar CV'
             },
 
