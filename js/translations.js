@@ -1,6 +1,6 @@
 export const translations = {
         en: {
-            pageTitle: 'Jeison Tantachuco — GIS Specialist & Geospatial Developer',
+            pageTitle: 'Jeison Tantachuco, GIS Specialist & Geospatial Developer',
 
             logo: 'Jeison Tantachuco',
 
@@ -28,7 +28,7 @@ export const translations = {
                 p1:
                     'I am an Agricultural Engineer turned geospatial specialist, currently doing an MSc in Geoinformatics at Eötvös Loránd University in Budapest as a Stipendium Hungaricum scholar.',
                 p2:
-                    'I have 5+ years of professional experience turning spatial data into decisions — spatial analysis, GIS automation, Earth-observation processing, and geospatial data management across government and retail.',
+                    'I have 5+ years of professional experience turning spatial data into decisions: spatial analysis, GIS automation, Earth-observation processing, and geospatial data management across government and retail.',
                 p3:
                     'I also work with geospatial databases and servers (PostgreSQL/PostGIS, SQL Server, GeoServer) and build focused web-mapping applications. I work in Spanish (native) and English (B2, IELTS).',
                 stack: 'Main stack:'
@@ -61,7 +61,7 @@ export const translations = {
                 isochrones: {
                     title: 'Geospatial Isochrone Viewer',
                     problem:
-                        'Which population can reach a given point within a set travel time — and how many people is that?',
+                        'Which population can reach a given point within a set travel time, and how many people is that?',
                     approach:
                         'A Leaflet app that requests travel-time isochrones from OpenRouteService and intersects them with a PostGIS population layer to sum the residents inside.',
                     result:
@@ -79,7 +79,7 @@ export const translations = {
                     result:
                         'A browser animation with timeline playback, coastline masking, and an interactive Leaflet map of modelled travel times.',
                     limits:
-                        'The cost surface approximates shallow-water physics — it estimates first-arrival timing, not wave height or run-up.'
+                        'The cost surface approximates shallow-water physics: it estimates first-arrival timing, not wave height or run-up.'
                 },
 
                 balaton: {
@@ -109,7 +109,7 @@ export const translations = {
         },
 
         es: {
-            pageTitle: 'Jeison Tantachuco — Especialista GIS y Desarrollador Geoespacial',
+            pageTitle: 'Jeison Tantachuco, Especialista GIS y Desarrollador Geoespacial',
 
             logo: 'Jeison Tantachuco',
 
