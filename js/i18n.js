@@ -27,6 +27,14 @@ function setLanguage(language) {
         }
     });
 
+    document.querySelectorAll('.cv-link').forEach((link) => {
+        const href = language === 'es' ? link.dataset.cvEs : link.dataset.cvEn;
+
+        if (href) {
+            link.setAttribute('href', href);
+        }
+    });
+
     document.documentElement.lang = language;
     document.title = translations[language].pageTitle;
 

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeison Tantachuco · CV</title>
+<style>
+    :root {
+        --accent: #1f4e79;
+        --ink: #222;
+        --muted: #555;
+        --rule: #c9d3dc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        background: #e9edf1;
+        color: var(--ink);
+        font-family: "Calibri", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        font-size: 10.5pt;
+        line-height: 1.36;
+    }
+
+    /* screen-only helper bar */
+    .hint {
+        max-width: 210mm;
+        margin: 0 auto;
+        padding: 10px 16px;
+        font-size: 9.5pt;
+        color: #33475b;
+        background: #dceaf5;
+        border-bottom: 1px solid #b9d3e6;
+    }
+    .hint b { color: #1f4e79; }
+
+    .page {
+        max-width: 210mm;
+        margin: 14px auto 40px;
+        padding: 16mm 16mm 14mm;
+        background: #fff;
+        box-shadow: 0 2px 14px rgba(0, 0, 0, 0.14);
+    }
+
+    header { margin-bottom: 10px; }
+
+    h1 {
+        margin: 0;
+        font-size: 22pt;
+        letter-spacing: 0.5px;
+        color: var(--accent);
+    }
+
+    .role {
+        margin: 2px 0 6px;
+        font-size: 11.5pt;
+        font-weight: 600;
+        color: var(--ink);
+    }
+
+    .contact {
+        font-size: 9.5pt;
+        color: var(--muted);
+    }
+    .contact a { color: var(--muted); text-decoration: none; }
+    .contact span { white-space: nowrap; }
+
+    h2 {
+        font-size: 10.5pt;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        color: var(--accent);
+        border-bottom: 1.5px solid var(--rule);
+        padding-bottom: 2px;
+        margin: 14px 0 7px;
+    }
+
+    p { margin: 0 0 6px; }
+
+    ul { margin: 4px 0 8px; padding-left: 17px; }
+    li { margin-bottom: 3px; }
+
+    .skills li { margin-bottom: 4px; }
+    .skills strong { color: var(--ink); }
+
+    .job { margin-bottom: 9px; }
+    .job-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+    }
+    .job-title { font-weight: 700; }
+    .job-title .org { font-weight: 600; }
+    .job-meta {
+        white-space: nowrap;
+        color: var(--muted);
+        font-size: 9.5pt;
+    }
+    .job-loc { color: var(--muted); font-size: 9.5pt; margin: 0 0 3px; }
+
+    .proj { margin-bottom: 6px; }
+    .proj b { color: var(--ink); }
+    .proj .link { color: var(--accent); font-size: 9pt; text-decoration: none; }
+
+    .edu-item { margin-bottom: 6px; }
+    .edu-item .sub { color: var(--muted); font-size: 9.5pt; }
+
+    a { color: var(--accent); }
+
+    @media print {
+        html, body { background: #fff; font-size: 10pt; }
+        .hint { display: none; }
+        .page {
+            max-width: none;
+            margin: 0;
+            padding: 0;
+            box-shadow: none;
+        }
+        h2 { break-after: avoid; }
+        .job, .proj, .edu-item { break-inside: avoid; }
+    }
+
+    @page { size: A4; margin: 14mm 15mm; }
+</style>
+</head>
+<body>
+
+<div class="hint">
+    <b>Para guardar como PDF:</b> abre este archivo en Chrome o Edge → Imprimir (Ctrl/Cmd&nbsp;+&nbsp;P) →
+    Destino <b>Guardar como PDF</b> → Márgenes <b>Predeterminados</b>, activa <b>Gráficos de fondo</b> → Guarda como
+    <code>jeisontantachuco_cv_es.pdf</code>. Esta barra no aparece en el PDF.
+</div>
+
+<div class="page">
+
+    <header>
+        <h1>Jeison Tantachuco</h1>
+        <div class="role">Especialista GIS y Desarrollador Geoespacial</div>
+        <div class="contact">
+            <span>Budapest, Hungría</span> &nbsp;·&nbsp;
+            <span><a href="mailto:jtantaroman@gmail.com">jtantaroman@gmail.com</a></span><br>
+            <span><a href="https://linkedin.com/in/jeison-alberto-tantachuco-roman">linkedin.com/in/jeison-alberto-tantachuco-roman</a></span> &nbsp;·&nbsp;
+            <span><a href="https://github.com/JeisonTantachuco">github.com/JeisonTantachuco</a></span> &nbsp;·&nbsp;
+            <span><a href="https://jeisontantachuco.github.io/portafolio">jeisontantachuco.github.io/portafolio</a></span>
+        </div>
+    </header>
+
+    <h2>Perfil</h2>
+    <p>
+        Especialista GIS y Desarrollador Geoespacial con más de 5 años de experiencia convirtiendo datos
+        espaciales en aplicaciones Web GIS, herramientas de observación de la Tierra y modelos de apoyo a la
+        decisión. Ingeniero Agrícola, actualmente completando una maestría en Geoinformática en Eötvös Loránd
+        University como becario de Stipendium Hungaricum. Cómodo en todo el flujo de trabajo: análisis
+        espacial y modelado, automatización en Python/R y PostGIS, Google Earth Engine, y cartografía web con
+        Leaflet/OpenLayers. Con experiencia en datos estadísticos de escala nacional y equipos multiculturales
+        en América Latina y Europa.
+    </p>
+
+    <h2>Habilidades Principales</h2>
+    <ul class="skills">
+        <li><strong>SIG y Análisis Espacial:</strong> ArcGIS, QGIS, PyQGIS, GeoDa, CloudCompare; estadística espacial (I de Moran, LISA), modelado de gravedad y accesibilidad</li>
+        <li><strong>Programación y Datos:</strong> Python (GeoPandas, Rasterio, NumPy, GDAL/OGR), R, SQL</li>
+        <li><strong>Teledetección y Observación de la Tierra:</strong> Google Earth Engine, Landsat 8/9, MODIS, Sentinel, GRASS GIS, procesamiento de nubes de puntos LiDAR</li>
+        <li><strong>Bases de Datos y Servidores:</strong> PostgreSQL/PostGIS, SQL Server, GeoServer, estándares OGC (WMS, WFS, teselas)</li>
+        <li><strong>Cartografía Web y Desarrollo:</strong> HTML, CSS, JavaScript, Leaflet, OpenLayers, Git/GitHub</li>
+        <li><strong>Documentación y Entrega:</strong> documentación técnica, flujos de trabajo reproducibles, entrega bilingüe (ES/EN)</li>
+    </ul>
+
+    <h2>Proyectos Seleccionados</h2>
+    <div class="proj">
+        <b>Monitor de Temperatura Superficial del Lago Balatón</b> &middot; aplicación web en Google Earth Engine
+        que detecta anomalías de temperatura superficial del lago derivadas de satélite frente a una
+        climatología 2003–2022, combinando MODIS Terra/Aqua, Landsat 8/9 y ERA5-Land.
+        <a class="link" href="https://jtantaroman.users.earthengine.app/view/lake-balaton-lst-monitor">jtantaroman.users.earthengine.app/view/lake-balaton-lst-monitor</a>
+    </div>
+    <div class="proj">
+        <b>Explorador de Propagación de Tsunamis del Caribe</b> &middot; reconstrucción de los tiempos regionales de
+        llegada de un tsunami originado por el terremoto de Puerto Rico de 1918, usando la batimetría GEBCO
+        2025, una proyección gnomónica personalizada y un modelo de propagación de costo mínimo, entregada
+        como una animación web con reproducción temporal.
+        Python, QGIS, GRASS GIS, GDAL, Rasterio, Leaflet.
+        <a class="link" href="https://jeisontantachuco.github.io/caribbean-tsunami-propagation-explorer/">jeisontantachuco.github.io/caribbean-tsunami-propagation-explorer</a>
+    </div>
+    <div class="proj">
+        <b>Visualizador Geoespacial de Isocronas</b> &middot; aplicación interactiva que calcula áreas de alcance por
+        tiempo de viaje y la población contenida en ellas, integrando una API de ruteo con un backend en
+        PostGIS.
+        Leaflet, OpenRouteService, PostgreSQL/PostGIS.
+        <a class="link" href="https://isocronapoblacion.vercel.app/">isocronapoblacion.vercel.app</a>
+    </div>
+
+    <h2>Experiencia Profesional</h2>
+
+    <div class="job">
+        <div class="job-head">
+            <div class="job-title">Capacitador GIS para IA <span class="org">&middot; micro1 (Consultor)</span></div>
+            <div class="job-meta">Mar 2026 – Ago 2026</div>
+        </div>
+        <div class="job-loc">Remoto</div>
+        <ul>
+            <li>Diseñé de extremo a extremo entre 30 y 40 tareas geoespaciales en QGIS (enunciados, datos de entrada, entregables y rúbricas de evaluación) en raster, vectorial, teledetección, hidrología y cartografía.</li>
+            <li>Revisé y validé entre 40 y 50 flujos de trabajo en QGIS presentados por especialistas GIS de un grupo global de aproximadamente 200 colaboradores.</li>
+            <li>Documenté el razonamiento de análisis espacial, la resolución de problemas y los controles de calidad para apoyar el entrenamiento de IA en flujos de trabajo profesionales de GIS.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-head">
+            <div class="job-title">Pasante GIS <span class="org">&middot; AUMOVIO</span></div>
+            <div class="job-meta">Nov 2025 – Jun 2026</div>
+        </div>
+        <div class="job-loc">Budapest, Hungría</div>
+        <ul>
+            <li>Mapeé, segmenté y clasifiqué nubes de puntos LiDAR en un radio de aproximadamente 3 cuadras alrededor de instalaciones de estacionamiento: elementos 2D (plazas de estacionamiento, marcas de carril, postes, muros, líneas de parada) y objetos 3D (peatones, autos, vehículos de dos ruedas, estacionados y en movimiento), usando CloudCompare y QGIS.</li>
+            <li>Construí un script en QGIS/Python que genera salidas GeoJSON estandarizadas para el flujo de mapeo 2D y lo compartí con el equipo (con aprobación del líder de equipo) para eliminar configuraciones repetitivas.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-head">
+            <div class="job-title">Analista GIS <span class="org">&middot; Intercorp Retail</span></div>
+            <div class="job-meta">Jun 2023 – Ago 2025</div>
+        </div>
+        <div class="job-loc">Lima, Perú</div>
+        <ul>
+            <li>Desarrollé e implementé 2 aplicaciones/tableros Web GIS interactivos usados por áreas interdepartamentales para selección de ubicaciones y decisiones espaciales.</li>
+            <li>Desarrollé flujos de trabajo geoespaciales de backend en PostgreSQL/PostGIS sobre bases de datos nacionales de entre 300 mil y 400 mil registros (demográficos, socioeconómicos y espaciales).</li>
+            <li>Evalué entre 20 y 30 ubicaciones candidatas de tiendas por semana usando modelos de gravedad y análisis comparativo para selección predictiva de ubicaciones.</li>
+            <li>Reemplacé un proceso manual en Excel de aproximadamente 2 minutos con un trigger de PostGIS activado por eventos que recalcula la población y los ingresos contenidos en cualquier polígono de servicio dibujado o editado en QGIS: resultados en segundos, sincronizados automáticamente en cada edición.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-head">
+            <div class="job-title">Analista Cartográfico <span class="org">&middot; Instituto Nacional de Estadística e Informática (INEI)</span></div>
+            <div class="job-meta">Oct 2020 – May 2023</div>
+        </div>
+        <div class="job-loc">Lima, Perú</div>
+        <ul>
+            <li>Procesé indicadores climáticos y demográficos (precipitación, temperatura, UV) para aproximadamente 94,000 centros poblados a nivel nacional usando Google Earth Engine.</li>
+            <li>Ejecuté análisis de accesibilidad a nivel nacional en más de 1,800 distritos, además de geocodificación y estratificación socioeconómica urbana con Python y GIS.</li>
+            <li>Diseñé procedimientos de integración para bases de datos censales y administrativas (aproximadamente un millón de registros) usando SQL, uniones espaciales y algoritmos de coincidencia de cadenas.</li>
+            <li>Coordiné con los líderes de proyecto en operaciones nacionales, incluyendo el Censo Económico (CENEC) y la Encuesta a la Población Venezolana (ENPOVE).</li>
+            <li>Aplique estadística espacial (I de Moran, LISA) a datos de encuestas y polígonos urbanos, y automaticé el procesamiento con scripts reproducibles.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-head">
+            <div class="job-title">Asistente Técnico <span class="org">&middot; SUYO S.A.C.</span></div>
+            <div class="job-meta">Ene – Feb 2019</div>
+        </div>
+        <div class="job-loc">Lima, Perú</div>
+        <ul>
+            <li>Revisé Planes de Acondicionamiento Territorial y Desarrollo Urbano, y ayudé a estructurar bases de datos geoespaciales para planificación regional.</li>
+        </ul>
+    </div>
+
+    <h2>Educación</h2>
+    <div class="edu-item">
+        <b>Maestría en Geoinformática</b> &middot; Eötvös Loránd University, Budapest, Hungría &nbsp;|&nbsp; Sep 2025 – Jun 2027<br>
+        <span class="sub">Becario Stipendium Hungaricum · Facultad de Informática</span>
+    </div>
+    <div class="edu-item">
+        <b>Diplomado en Programación de Aplicaciones de Cartografía Web (18 ECTS)</b> &middot; Fundación Universidad de Girona: Innovación y Formación, España &nbsp;|&nbsp; Feb 2025 – Jun 2025
+    </div>
+    <div class="edu-item">
+        <b>Bachillerato y Título Profesional en Ingeniería Agrícola</b> &middot; Universidad Nacional Agraria La Molina, Lima, Perú &nbsp;|&nbsp; 2014 – 2019
+    </div>
+
+    <h2>Idiomas</h2>
+    <ul>
+        <li><strong>Español</strong> &middot; Nativo</li>
+        <li><strong>Inglés</strong> &middot; B2 (IELTS 6.5, 2024)</li>
+    </ul>
+
+</div>
+
+</body>
+</html>
